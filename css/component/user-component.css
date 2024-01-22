@@ -25,6 +25,11 @@
     font-size: 18px;
 }
 
+.user-component__title__lg{
+    font-size: 32px;
+    font-weight: 600;
+}
+
 .user-component__subtitle{
     margin-top: 5px;
     font-size: 17px;

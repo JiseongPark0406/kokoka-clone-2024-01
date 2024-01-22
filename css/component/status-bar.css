@@ -1,5 +1,6 @@
 
 .status-bar{
+  max-width: var(--max-width);
     display: flex;
     justify-content: center;
     width: 100vw;

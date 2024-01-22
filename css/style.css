@@ -10,14 +10,18 @@
 @import "component/screen-header.css";
 @import "component/user-component.css";
 @import "component/badge.css";
+@import "component/icons-row.css";
+@import "component/alternative-screen-header.css";
+
+
 @import "Chats.css";
 @import "find.css";
 @import "more.css";
 @import "setting.css";
 body{
+  max-width: var(--max-width);
   height: 1000px;
   background-color: rgb(255, 255, 255);
-  text-align: center;
   font-family: 'Fira Sans', sans-serif;}
 
   .main-screen{

@@ -1,4 +1,5 @@
 .nav{
+    max-width: var(--max-width);
     position: fixed;
     bottom: 0;
     background-color: white;

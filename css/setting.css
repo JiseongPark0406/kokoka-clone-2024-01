@@ -1,26 +1,40 @@
-*{
-    box-sizing: border-box;
+.setting-main-list{
+    margin-left: var(--horizontal-space);
+    list-style: none;
+    width: var(--max-width);
 }
-.setting-header{
-    width: 100vw;
-    height: 30px;
+.setting__item{
+padding: 20px 0;
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+font-size: 18px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.setting__item i{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    font-size: 22px;
+}
+.setting__item__column{
+    display: flex;
+    align-items: center;
+}
+.setting__item__column__right{
+    color: rgba(0, 0, 0, 0.4);
+}
+.setting__notiContainer{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 82, 82);
+    border-radius: 50%;
     display: flex;
     justify-content: center;
-    padding-top: 50px;
-    padding: 50px 30px;
+    align-items: center;
+    color: white;
+    margin-left: 10px;
+    font-size: 13px;
 }
-
-.setting-header-column:first-child{
-    margin-right: auto;
-}
-.setting-header-column:last-child{
-    margin-left: auto;
-}
-.setting-header__title{
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.setting-main-list > li{
-    width: 100vw;
-}
+/*
+setting  header 왤케 길어?

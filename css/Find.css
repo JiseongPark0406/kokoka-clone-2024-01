@@ -16,31 +16,11 @@
     left: 20px;
     bottom: 20px;
 }
-.find-icons{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 10px;
 
-}
-.find-icons__iconSection{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
-
-/*혹은, iconSection을 icon으로 지정하고,
-.find-icons_icon i{
-}
-*/
-.find-icons__icon{
-    margin: 15px;
-}
 
 .recommanded-friends-section{
     border-bottom: var(--main-border);
-    border-top: var(--main-border);
-    margin: 15px 0px;
-    padding: 25px 0px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

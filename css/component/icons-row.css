@@ -1,0 +1,22 @@
+.icons-row__list{
+    display: flex;
+    margin-bottom: 10px;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 50px;
+    margin-top: -20px;
+}
+.icons-row__item{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 19.1px;
+    width: 70px;
+    height: 70px;
+}
+
+
+.icons-row__icon{
+    margin: 15px;
+}

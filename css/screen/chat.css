@@ -1,0 +1,104 @@
+#chat-screen{
+    background-color: #abc1d1;
+    height: 1100px;
+}
+
+#chat-screen .alt-header{
+    top: 0;
+    position: fixed;
+    width: calc(var(--max-width) - 50px);
+}
+#chat-screen .status-bar, #chat-screen .alt-header{
+    top: 0;
+}
+.chat-main{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chat__timestamp{
+    color: white;
+    background-color: #92a4b2;
+    border-radius: 15px;
+    padding: 8px 15px;
+font-size: 14px;
+margin-bottom: 25px;
+}
+.message-row__img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.message-row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.message__author{
+    opacity: 0.8;
+    font-size: 13px;
+    margin-bottom: 7px;
+    display: block;
+}
+.message__bubble{
+    background-color: white;
+    padding: 13px;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+}
+.message__info{
+    display: flex;
+    align-items: flex-end;
+}
+.message__title{
+    opacity: 0.8;
+    font-size: 13px;
+    padding-left: 5px;
+}
+.message-row__me{
+justify-content: flex-end;}
+
+.message__me__bubble{
+    border-top-right-radius: 0px;
+    border-top-left-radius: 20px;
+    background-color: var(--yellow);
+}
+.message__me__info{
+    display: flex;
+    /* flex-direction: row-reverse;
+    이것도 되지만*/
+}
+
+
+.message__me__title{
+    margin-right: 5px;
+    order: 0;
+}
+.message__me__bubble{
+order: 1;
+}
+
+.reply{
+    position: fixed;
+    bottom: 0;
+    width: calc(var(--max-width) - 50px);
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+    align-items: center;
+}
+.reply__column:nth-child(1){
+    width: 10%;
+}
+.reply__column:nth-child(2){
+    width: 500px;
+}
+.replay__column input{
+    height: 30px;
+    width: 100%;
+}

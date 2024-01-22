@@ -6,7 +6,7 @@
     <title>Chat with Nico/ Kokoa Clone</title>
     <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar_column">
         <span class="status-bar_column_service">No Service</span>
@@ -37,18 +37,47 @@
     </div>
     <header class="alt-header">
       <div class="alt-header-column">
-        <a href="javascript:history.back();">
-          <i class="fa-solid fa-chevron-left setting-header-left fa-2x"></i>
+        <a href="chats.html">
+          <i class="fa-solid fa-chevron-left setting-header-left fa-lg"></i>
         </a>
       </div>
       <div class="alt-header-column">
         <h1 class="alt-header__title">Nico</h1>
       </div>
       <div class="alt-header-column">
-        <span><i class="fa-solid fa-magnifying-glass fa-2x"></i> </span>
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i> </span>
+        <span><i class="fa-solid fa-bars fa-lg"></i></span>
       </div>
     </header>
-
+    <main class="main-screen chat-main">
+      <div class="chat__timestamp">Tuesday, January 23, 2024</div>
+      <div class="message-row">
+        <img src="img/sohui.jpg" class="message-row__img" />
+        <div class="message-row__content">
+          <span class="message__author">Sohui, Han</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__title">23:47</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row__me">
+        <div class="message__info message__me__info">
+          <span class="message__bubble message__me__bubble">Hi!</span>
+          <span class="message__title message__me__title">23:47</span>
+        </div>
+      </div>
+    </main>
+    <form class="reply">
+      <div class="replay__column">
+        <i class="fa-regular fa-square-plus"></i>
+      </div>
+      <div class="replay__column">
+        <input type="text" placeholder="Write a message.." />
+        <i class="fa-regular fa-face-smile"></i>
+        <i class="fa-regular fa-circle-up"></i>
+      </div>
+    </form>
     <script
       src="https://kit.fontawesome.com/3b352bcfa0.js"
       crossorigin="anonymous"

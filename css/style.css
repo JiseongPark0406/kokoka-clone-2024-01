@@ -5,6 +5,11 @@
 @import "screen/welcome-header.css";
 @import "screen/login-form.css";
 @import "screen/friend.css";
+@import "screen/Chats.css";
+@import "screen/Find.css";
+@import "screen/more.css";
+@import "screen/chat.css";
+@import "screen/setting.css";
 
 @import "component/nav-bar.css";
 @import "component/screen-header.css";
@@ -14,15 +19,15 @@
 @import "component/alternative-screen-header.css";
 
 
-@import "Chats.css";
-@import "find.css";
-@import "more.css";
-@import "setting.css";
+
 body{
   max-width: var(--max-width);
   height: 1000px;
   background-color: rgb(255, 255, 255);
-  font-family: 'Fira Sans', sans-serif;}
+  font-family: 'Fira Sans', sans-serif;
+  box-sizing: border-box;
+
+}
 
   .main-screen{
     padding: 0px var(--horizontal-space);

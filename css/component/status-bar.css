@@ -3,10 +3,10 @@
   max-width: var(--max-width);
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: var(--max-width);
     padding: 10px 3px;
     position: fixed;
-    background-color: #fff;
+
   }
   
   .status-bar_column{

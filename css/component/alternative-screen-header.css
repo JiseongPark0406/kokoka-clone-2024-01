@@ -3,7 +3,7 @@
     padding-top: 50px;
     margin-bottom: 0px;
     display: flex;
-    width: var(--max-width);
+    width: calc(var(--max-width) - 50px);
     justify-content: center;
     align-items: center;
 }
@@ -15,6 +15,18 @@
 .alt-header-column:first-child{
     margin-right: auto;
 }
+.alt-header-column:nth-child(2){
+    text-align: center;
+}
 .alt-header-column:last-child{
     margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.alt-header-column span:last-child{
+    margin-left:20px;
+}
+.alt-header-column{
+    width: 33%;
 }

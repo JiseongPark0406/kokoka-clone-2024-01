@@ -1,0 +1,5 @@
+.user-component > .chats__user-component__notice{
+    flex-direction:column;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}

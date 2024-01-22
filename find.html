@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - Kokoa Clone</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar_column">
+        <span class="status-bar_column_service">No Service</span>
+        <svg
+          class="status-bar_column_wifi_icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z"
+          />
+        </svg>
+      </div>
+      <div class="status-bar_column">
+        <span class="status-bar_column_time">18:43</span>
+      </div>
+      <div class="status-bar_column">
+        <span class="status-bar_column_battery_mount">110%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt-lightning"></i>
+      </div>
+    </div>
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i> </span>
+        <span class="find__cg">
+          <i class="fa-solid fa-gear fa-lg"></i>
+          <div class="find__cg__badge"></div>
+        </span>
+      </div>
+    </header>
+    <main class="main-screen">
+      <div class="find-icons">
+        <div class="find-icons__iconSection">
+          <i class="fa-solid fa-qrcode fa-2x find-icons__icon"></i>
+          <span class="find-icons__iconText">QR Code</span>
+        </div>
+        <div class="find-icons__iconSection">
+          <i class="fa-regular fa-address-book fa-2x find-icons__icon"></i>
+          <span class="find-icons__iconText">Add By <br />Contacts</span>
+        </div>
+        <div class="find-icons__iconSection">
+          <i class="fa-solid fa-id-card fa-2x find-icons__icon"></i>
+          <span class="find-icons__iconText">Add By ID</span>
+        </div>
+        <div class="find-icons__iconSection">
+          <i class="fa-regular fa-envelope fa-2x find-icons__icon"></i>
+          <span class="find-icons__iconText">Invite</span>
+        </div>
+      </div>
+      <div class="recommanded-friends-section">
+        <h6 class="recommanded-friends-section__title">Recommanded Friends</h6>
+        <div class="recommanded-friends-section__text-bar">
+          <span class="recommanded-friends-section__text"
+            >You have no recommanded friends.</span
+          >
+          <!-- 굳이 span을 div로 감쌀 필요도, class name을 줄 필요도 없었음.
+                그냥 [.recommanded-friends-section span] 처리 해버리면 그만. 
+                그렇게 span에 width, text-align을 줘버리면 그만임. 
+                But, 이렇게 하면 css에서 좀 더 명확하게 알 수 있지 않을까? css에서 span이 무슨 의미인지 모르니까.-->
+        </div>
+      </div>
+
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4 class="open-chat__title">Open Chat</h4>
+          <span
+            >Go to Openchat Home <i class="fa-solid fa-chevron-right"> </i>
+          </span>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#BTS</h5>
+            <h6 class="open-post__hastags">#bts#army#friends</h6>
+            <div class="open-post__members">
+              <img src="img/sohui.jpg" />
+              <span class="open-post__members-count">808 membders</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__main-img">
+              <div class="open-post__main-img__like">
+                <i class="fa-solid fa-heart"></i>
+                <span class="open-post__main-img__like-count">264</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#SohuiHan</h5>
+            <h6 class="open-post__hastags">#Sohui#Han#Model</h6>
+            <div class="open-post__members">
+              <img src="img/sohui.jpg" />
+              <span class="open-post__members-count">999 membders</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__main-img">
+              <div class="open-post__main-img__like">
+                <i class="fa-solid fa-heart"></i>
+                <span class="open-post__main-img__like-count">999</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-btn">
+          <a class="nav-link" href="friends.html"
+            ><i class="fa-regular fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav-btn">
+          <a class="nav-link" href="chats.html">
+            <span class="nav-notification badge">1</span>
+            <i class="fa-regular fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav-btn">
+          <a class="nav-link" href="find.html"
+            ><i class="fa-solid fa-magnifying-glass fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav-btn">
+          <a class="nav-link" href="more.html">
+            <div class="nav-noti"></div>
+            <i class="fa-solid fa-ellipsis fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <script
+      src="https://kit.fontawesome.com/3b352bcfa0.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+<!--
+  icon에 클래스를 넣는 방법도 있지만, span 태그 안에 집어넣는 방법도 있음. -> 니꼬쌤이 쓰는 방법
+
+-->

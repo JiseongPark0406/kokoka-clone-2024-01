@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+.setting-header{
+    width: 100vw;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding: 50px 30px;
+}
+
+.setting-header-column:first-child{
+    margin-right: auto;
+}
+.setting-header-column:last-child{
+    margin-left: auto;
+}
+.setting-header__title{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.setting-main-list > li{
+    width: 100vw;
+}

@@ -1,0 +1,60 @@
+.fa-envelope-open-text{
+    width: 60px;
+    height: 60px;
+}
+.fa-triangle-exclamation{
+    color: rgb(245, 83, 83);
+}
+.options{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+    border-bottom: var(--main-border);
+}
+
+.options li{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.options li span{
+    margin-top: 15px;
+}
+.suggestions__icons{
+    list-style:none;
+    display: flex;
+}
+.suggestions__icons{
+    margin: 20px;
+}
+.suggestions__icons li:first-child{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.suggestions__icons li img{
+    width: 60px;
+    height: 60px;
+}
+.suggestions__icons li{
+    margin: 20px;
+}
+.suggestions__icons__friends{
+    background-image: url("img/kakaofriends.png");
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+}
+.suggestions__icons__gem{
+    background-image: url("img/kakaogem.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+}
+.suggestions__icons li span{
+    padding-top: 10px;
+}

@@ -1,0 +1,33 @@
+.nav{
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    padding: 20px 50px;;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    width: 100%;
+    box-sizing: border-box;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+.nav-link{
+    color: inherit;
+    position: relative;
+}
+.nav-notification{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+.nav-noti{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 30px;
+    background-color: tomato;
+    border-radius: 50%;
+}

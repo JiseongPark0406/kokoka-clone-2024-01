@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - Kokoa Clone</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar_column">
+        <span class="status-bar_column_service">No Service</span>
+        <svg
+          class="status-bar_column_wifi_icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z"
+          />
+        </svg>
+      </div>
+      <div class="status-bar_column">
+        <span class="status-bar_column_time">18:43</span>
+      </div>
+      <div class="status-bar_column">
+        <span class="status-bar_column_battery_mount">110%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt-lightning"></i>
+      </div>
+    </div>
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i> </span>
+        <span>
+          <i class="fa-solid fa-music fa-lg"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-gear fa-lg"></i>
+        </span>
+      </div>
+    </header>
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="img/sohui.jpg" class="user-component__avatar" />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Nicco</h4>
+            <h6 class="user-component__subtitle">
+              +82 8604-9616
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+        <i class="fa-solid fa-envelope-open-text fa-2x"></i>
+      </div>
+
+      <ui class="options">
+        <li>
+          <i class="fa-regular fa-calendar-check fa-3x"></i>
+          <span>Calendar</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-boxes-packing fa-3x"></i>
+          <span>Talk Drive</span>
+        </li>
+        <li>
+          <i class="fa-regular fa-face-smile fa-3x"></i>
+          <span>Emotions</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-brush fa-3x"></i>
+          <span>Themes</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-circle-info fa-3x"></i> <span>Account</span>
+        </li>
+        <li>
+          <i class="fa-regular fa-comments fa-3x"></i> <span>openchat</span>
+        </li>
+      </ui>
+      <div class="suggestions">
+        <span class="suggestions__title"></span>
+        <ul class="suggestions__icons">
+          <li class="suggestions__icons__first">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAulBMVEX24wr//////v////3z3Q744Q3///Hv0hP44wzWuBH068zPuVjz7crUshz14Az13A/z1g7Rs0n///j///bz5Av//+7YthvbvxHszRD31xDy2RD//un00hf6//3w3Q3pzhfOtkj27cPq3KPs4bTp3Knl1ZfhxBDfzojVxHfSvWTOsz339dfRtCvYwW7Vs0jRtE7Ks2jGry/MtUvGqzbjwAn389Lm3J/Sw2vYxHzOtRzaxoDbuRH789z68sRrcs7oAAAG10lEQVR4nO2dC1PbOBCALclOnAuxVD8wUV6QgBNeR1OghcL9/791u3LoARfk3JAbW+5+A6VDZph87Eq7km3heQRBEARBEARBEARBEARBEARBEARBEARBEARBEMQ70jSt+y38z7Re0Gu94O9DuCfKH1azzDb8fdJEwUjnvb3wdHjYm8kGKgbd45M/9sT8UNats4Wg2++wfSAEOxg01ZAzxs2bNB8vX95+591/N5+vXxSiuYbgxz8fRN7gGEIAOMbgMzTbUPBP6jXekHGM4SeTVDTbEBw/a9jsGDIyJEMyrBMyJEMyrB8yJEMyrB8yJEMyrB8yJEMyrB8yJEMyrB8yJEMyrB8yJEMyrB8yJEMyrB8yJEMyrB8yJMMXRLPvayNDMnwxbPKd7BRDiuHvYAgfJz1dt84W9mbIGVu03vA0b+ZzT/vq2hg7K9o8DvGpm+WRX7fOFvaXpYKt2m0IA/G823LD+KYb1a2zhf0ZsuxCtdkQSv7llarbZht7nEtPHlUTn+Xeo+E81602FGxZyCYe0xB2+5nxe//A5CYwoix11SHk8XUjyyEadvDxw4/e+QQfg97JcHQ8njbxrA3I0lGWdbLOdpIEXkl2StP7K9XIGAbq8M/j4y8fcXMD/3zNqv0Erp2a2Hh7gVY24FU92+1MgrNCB3XbbCPQVkBQF8tdBJPzo0aG0Auk1MOhlqiyzXCodW+xi+FoPYZi0cCZJox8X0qJn1uAb/v64tKqZp7Fh46mN5Re2EBDL7Lh+1O/PDjDZsixnp4VKgoaaWhVDKJIFsuqcshZLOLzrvaCJmapZ1UMvUgenlQIQgxj9rxWfuri6VpppI4zawyxxeMTtsi17+TxaKkPtaLCcALzTLI60hFEsIFrCztpqAcHwjrRcD6BvnW0VtJNw6B7G8M4sxtCHBdPupEHfVWRen5+xioOIMJxiEnqpCH05etnYV8cixh+BaMrTFIHCU0xFBNrDDGKp7lu4iWLaiL9+IwdmX0cChb3IUnrfrP/kdAUb3+2SmCesc80LOaXA+1ikqYwCq8OxKvT2z5QFOLnzLkQehjFVBarDhbDCsPJ6EJr50IIAfQ8dXVvdXtJ03mumnjx1w420TJf2tuZDaNvXS0buYFhJU3l0ZfRDn6CneLa1znDME2Hg9OdNsKTPoTQvVVF6PnFdWItEy8senoqHVwY+t3by6qO1NCBEPqRQ0kabqKhBgtR0ZHCEORM4EawU8PQbLWk0JA+JJOKmRSXvmL0DRo2p4phCpUQ59H+CHfQbDHkYMig53ZtVZGmYRhG3dt7VjXNmENPny+6joUQEjRIgzEMQhaLipkGDz1d3mnpWksahKk+PBOYhPYLh7gTfD8YuhZCDxeFvWVipklmHYeQo51znGbcMdwUCj9fdcqzrT+4uM/L0MKX74cuhRBXEzCRhjq/HtnTEw05TkSX6/HQd2cUpvgnS8JA5T86nFcMQCZiiG/yY6YcWxemaTTsPWSM2+89EWaeFWzecylHkTSSMMl0ysPLLYZmJ5+x+3VXT32H2jVYL6nx4DvGJ67ouOHVCcv6R1pPg8ChTcRIzy5OzJ1D9s01cysp6yxzhS23Q0Tqrn9vCoT9fPbNPVOnj9CuycChC2ohDMHMrIesdvgrwIYUBqFybJqJ1OMchlfVxVBzPVSw0c1MK5e6GQ9HISjGlZMojFBYNmbXhXKqXUMifzgezO2XCstL9oIly56GVaFbgp4npVKPZ/YoYq1POJs/algzuSYYTn2th71lbDE0d6Hy5HSgtFubTyVBNNVD1TtLTK1415iK8k/lCEzTxXpsctShUr8hgqZNKYji5i6nV8E0nbgwS2JxcNt1MUeRKPJhLOrez/jfC0NeegIHaxR0bPNpQ4iKWuunh85LV/MiKuKYlWE9wUovXSsUvzCOSj39TFi5VforlJi3CaQvCip3BT0zFn2tnh6S0u2fe/Y5n8ScGUHwc1cQ8OVU6/y6YxYQv7IUH0jg8eKqTNG63+MnwXtmdf6QbS7gb2IJa8b4+2AMKTp1rxC+A8ai1ipfGUWcXXhZCrPlYAyzqNsZWoJ1ERUxUWP8MIum7DrX2uFZ9A2gKJUsvo7Mch/37rm4v7mD1YRsRQjLogE96t31CO+NxWtsYnEL60FTJtzr1bZiFHXxNTOXL3hnedVtT4qW4G36WhV93P0Wz+e5Qj/ny8Rb0NAv+pcsmW8yNGiXoFc2cEX/r1VvrP12ZegGnFEhUQeFVkPVlkn0DVGpOByaR4Mc70U/AB8K8pXS05b6eRtFKWXb5pjXBOahthYLmkeiUnOTDUEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQ2/kbY9GkWDiX1KMAAAAASUVORK5CYII="
+            />
+            <span>Kakao Story</span>
+          </li>
+          <li>
+            <div class="suggestions__icons__friends"></div>
+            <span>Kakao friends</span>
+          </li>
+          <li>
+            <div class="suggestions__icons__gem"></div>
+            <span>Kakao Gem</span>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-btn">
+          <a class="nav-link" href="friends.html"
+            ><i class="fa-solid fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav-btn">
+          <a class="nav-link" href="chats.html">
+            <span class="nav-notification badge">1</span>
+            <i class="fa-solid fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav-btn">
+          <a class="nav-link" href="find.html"
+            ><i class="fa-solid fa-magnifying-glass fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav-btn">
+          <a class="nav-link" href="more.html">
+            <div class="nav-noti"></div>
+            <i class="fa-solid fa-ellipsis fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <script
+      src="https://kit.fontawesome.com/3b352bcfa0.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+<!--
+  icon에 클래스를 넣는 방법도 있지만, span 태그 안에 집어넣는 방법도 있음. -> 니꼬쌤이 쓰는 방법
+
+-->

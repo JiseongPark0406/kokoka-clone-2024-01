@@ -1,0 +1,42 @@
+:root{
+--yellow: #fce300;
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+[class*=login_form]{
+    width: 100vw;
+    border: none;
+  }
+  
+  .login_form_ID, .login_form_password{
+    padding: 15px 0px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  .login_form input::placeholder{
+    color: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .login_form input:focus{
+    border-color: var(--yellow);
+/* 선택됐을 떄, 아래의 밑줄이 강조되는 효과*/
+  }
+  .login_form_logbtn, .login_form_signbtn{
+    padding: 25px 0px;
+    background-color: #fce300;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+    .login_form a{
+        text-align: center;
+        text-decoration: none;
+        color:inherit;
+        margin-top: 20px;
+    }

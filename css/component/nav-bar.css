@@ -76,3 +76,7 @@ to{
     animation-delay: 0.45s;
 
 }
+.nav{
+    box-sizing: border-box;
+
+}

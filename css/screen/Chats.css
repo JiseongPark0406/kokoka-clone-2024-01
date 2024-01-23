@@ -3,3 +3,21 @@
     margin-right: 10px;
     margin-bottom: 30px;
 }
+
+@keyframes chat_listUp{
+from{
+    opacity: 0;
+    transform: translateY(30px);
+}
+to{
+    opacity: 1;
+    transform: none;
+}
+}
+.main-screen a{
+    opacity: 0;
+    animation: chat_listUp 0.5s linear forwards;
+}
+.main-screen a:last-child{
+    animation-delay: 0.15s
+}

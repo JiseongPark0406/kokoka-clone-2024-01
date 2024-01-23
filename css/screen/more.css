@@ -66,3 +66,6 @@
 .icons-row__list{
     border-bottom: var(--main-border);
 }
+.icons-row__item{
+text-align: center;
+}

@@ -2,6 +2,7 @@
     margin-left: var(--horizontal-space);
     list-style: none;
     width: 100vw;
+    box-sizing: border-box;
 }
 .setting__item{
 padding: 20px 0;
@@ -23,6 +24,7 @@ justify-content: space-between;
 }
 .setting__item__column__right{
     color: rgba(0, 0, 0, 0.4);
+    margin-right: 50px;
 }
 .setting__notiContainer{
     width: 20px;

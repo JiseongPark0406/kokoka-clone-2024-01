@@ -98,7 +98,7 @@ order: 1;
 .reply{
     position: fixed;
     bottom: 0;
-    width: 98vw;
+    width: 100%;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -107,7 +107,7 @@ order: 1;
     transition: all 0.3s linear;
 }
 .reply__column:nth-child(1){
-    width: 10%;
+    width: 5%;
     font-size: 30px;
     opacity: 0.5;
 }
@@ -117,6 +117,7 @@ order: 1;
     align-items: center;
     font-size: 20px;
     position: relative;
+    margin-right: 15px;
 
 }
 .reply__column:nth-child(2) button{

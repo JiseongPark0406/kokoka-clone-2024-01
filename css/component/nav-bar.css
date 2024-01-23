@@ -1,5 +1,4 @@
 .nav{
-    max-width: var(--max-width);
     position: fixed;
     bottom: 0;
     background-color: white;
@@ -21,9 +20,23 @@
 }
 .nav-notification{
     position: absolute;
-    left: 15px;
+        left: 15px;
     bottom: 15px;
+    animation: notiAnimation 1s ease-in-out infinite;
 }
+@keyframes notiAnimation{
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: translateY(-5px) rotateY(90deg);
+    }
+        
+    100%{
+        transform: none;
+    }
+}
+
 .nav-noti{
     position: absolute;
     width: 5px;
@@ -31,4 +44,35 @@
     left: 30px;
     background-color: tomato;
     border-radius: 50%;
+
+}
+
+@keyframes appearBtnAnimation{
+from{
+    opacity: 0;
+}
+to{
+    transform: none;
+    opacity: 1;
+
+}
+}
+.nav-btn{
+    animation: appearBtnAnimation 0.29s ease-in-out forwards;
+    transform: translateY(50px);
+    opacity: 0;
+
+
+}
+.nav-btn:nth-child(2){
+    animation-delay: 0.15s;
+}
+
+.nav-btn:nth-child(3){
+    animation-delay: 0.3s;
+
+}
+.nav-btn:nth-child(4){
+    animation-delay: 0.45s;
+
 }

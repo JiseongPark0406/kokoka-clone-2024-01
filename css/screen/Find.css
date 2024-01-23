@@ -108,3 +108,23 @@ div .open-post__members img{
 .open-post__main-img__like i{
     padding-right: 5px;
 }
+
+@keyframes heartbeat{
+    0%{
+        color: white;
+        transform: none;
+    }
+    50%{
+        color: tomato;
+        transform: scale(1.5)
+    }
+    100%{
+        color: white;
+        transform: none;
+
+    }
+}
+.open-post__main-img__like:hover i{
+    will-change: transform;
+animation: heartbeat 0.3s linear infinite;
+}

@@ -17,11 +17,10 @@
 @import "component/badge.css";
 @import "component/icons-row.css";
 @import "component/alternative-screen-header.css";
-
+@import "component/no-mobile.css";
 
 
 body{
-  max-width: var(--max-width);
   height: 1000px;
   background-color: rgb(255, 255, 255);
   font-family: 'Fira Sans', sans-serif;

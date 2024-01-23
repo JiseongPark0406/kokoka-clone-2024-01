@@ -1,7 +1,7 @@
 .setting-main-list{
     margin-left: var(--horizontal-space);
     list-style: none;
-    width: var(--max-width);
+    width: 100vw;
 }
 .setting__item{
 padding: 20px 0;
